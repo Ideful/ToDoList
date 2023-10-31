@@ -4,31 +4,22 @@ import (
 	// "fmt"
 	// "html/template"
 	// "log"
-	// "html/template"
+	server "ToDoList/internal"
+	// "fmt"
+	"log"
 	"net/http"
-	"time"
+	handler "ToDoList/internal/handler"
+	// "github.com/Ideful/todolist/internal/mi"
 )
 
+
 func main() {
-	a:=Server{}
-	a.Run("8080")
-	// tmpl,_:=template.ParseFiles("web/index.html")
-	// tmpl.Execute()
-}
-
-type Server struct{
-	httpServer *http.Server 
-}
-
-func (s *Server) Run(port string) error {
-	fs := http.FileServer(http.Dir("web"))
-	http.Handle("/", fs)
-	s.httpServer = &http.Server{
-		Addr:           ":"+port,
-		// Handler:        myHandler,
-		ReadTimeout:    10 * time.Second,
-		WriteTimeout:   10 * time.Second,
-		MaxHeaderBytes: 1 << 20,
+	s:= new(server.Server)
+	h := &handler.Handler{}
+	http.HandleFunc("/submit", h.HandleSubmit) 
+	if err := s.Run("8080"); err != nil {
+		log.Fatalf("error: \t %s",err)
 	}
-	return s.httpServer.ListenAndServe()
 }
+
+

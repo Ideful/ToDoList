@@ -54,6 +54,10 @@ func main() {
 		}
 		fmt.Printf("ID: %d, Name: %s, Age: %d, Gender: %s, Address: %s\n", id, name, age, gender, address)
 	}
-
-
 }
+
+ // у типа в видосе в структуре энкриптед
+// а в бд тоже энкриптед
+
+
+
