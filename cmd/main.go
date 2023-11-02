@@ -6,20 +6,38 @@ import (
 	// "log"
 	server "ToDoList/internal"
 	// "fmt"
-	"log"
-	"net/http"
 	handler "ToDoList/internal/handler"
+	"ToDoList/internal/repository"
+	"ToDoList/internal/service"
+	"log"
+	// "net/http"
+	// "github.com/spf13/viper"
 	// "github.com/Ideful/todolist/internal/mi"
 )
 
-
 func main() {
-	s:= new(server.Server)
-	h := &handler.Handler{}
-	http.HandleFunc("/submit", h.HandleSubmit) 
-	if err := s.Run("8080"); err != nil {
-		log.Fatalf("error: \t %s",err)
+	db, err := repository.CreatePostgresDB(repository.Config{
+		Host:     "localhost",
+		Port:     "5436",
+		Username: "postgres",
+		Password: "qwerty",
+		DBName:   "postgres",
+		SSLMode:  "disable",
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+	repos := repository.NewRepository(db)
+	services := service.NewService(repos)
+	handlers := handler.NewHandler(services)
+
+
+	s := new(server.Server)
+	// h := &handler.Handler{}
+	// http.HandleFunc("/submit", h.HandleSubmit)
+	if err := s.Run("8080", handlers.InitRoutes()); err != nil {
+		log.Fatalf("error: \t %s", err)
 	}
 }
 
-
+// func

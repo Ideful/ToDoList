@@ -2,30 +2,76 @@ package handler
 
 import (
 	// "errors"
-	"fmt"
-	"net/http"
-	"ToDoList/internal/models"
+	// "ToDoList/internal/models"
+	// "fmt"
+	// "net/http"
+
+	"ToDoList/internal/service"
+	// "fmt"
+
+	"github.com/gin-gonic/gin"
+	_ "github.com/gin-gonic/gin"
 )
 
+// // tut old
+// type Handler struct {
+// 	message string
+// }
+
+// func (h Handler) Get() string {
+// 	return h.message
+// }
+
+// func (h Handler) HandleSubmit(w http.ResponseWriter, r *http.Request) {
+// 	if r.Method != http.MethodPost {
+// 		http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
+// 		return
+// 	}
+
+// 	u := new(model.User)
+// 	u.Set(r.FormValue("username"), r.FormValue("password"))
+// 	fmt.Println(u.Username, u.Pwd)
+
+// 	return
+// }
+
+// // tut new
 type Handler struct {
-	message string
+	services *service.Service
 }
 
-func (h Handler) Get() string {
-	return h.message
+func NewHandler(services *service.Service) *Handler {
+	return &Handler{services: services}
 }
 
-func (h Handler) HandleSubmit(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
-		return
+func (h *Handler) InitRoutes() *gin.Engine {
+	router := gin.New()
+	auth := router.Group("/auth")
+	{
+		// fmt.Println("AaA")
+		auth.POST("/sign-up", h.signUp)
+		auth.POST("/sign-in", h.signIn)
 	}
 
-	u := new(model.User)
-	u.Set(r.FormValue("username"), r.FormValue("password"))
-	fmt.Println(u.Username, u.Pwd)
+	api := router.Group("/api")
+	{
+		lists := api.Group("/lists")
+		{
+			lists.POST("/", h.createList)
+			lists.GET("/", h.getAllLists)
+			lists.GET("/:id", h.getListById)
+			lists.PUT("/:id", h.updateList)
+			lists.DELETE("/:id", h.deleteList)
 
-	// Теперь у вас есть значение "message" из формы, которое можно обработать или сохранить в базе данных
-	// Вы можете использовать message в вашем коде для обработки данных
-	return
+			items := lists.Group(":id/items")
+			{
+				items.POST("/", h.createItem)
+				items.GET("/", h.getAllItems)
+				items.GET("/:item_id", h.getItemById)
+				items.PUT("/:item_id", h.updateItem)
+				items.DELETE("/:item_id", h.deleteItem)
+			}
+		}
+	}
+	return router
 }

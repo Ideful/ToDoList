@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	db,err:= sql.Open("postgres","port=5432 sslmode=disable dbname = DB" )	// ya hz kuda podklyachilsya
+	db,err:= sql.Open("postgres","user=postgres port=5436 sslmode=disable dbname=postgres password=qwerty" )	
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -20,39 +20,25 @@ func main() {
 		log.Fatal(err)
 	}
 
-
-	// get max val
 	var id int
-	toadd,_:=db.Query(`select max(id) from person`)
-	for toadd.Next() {
-		toadd.Scan(&id)
-	}
-	id++
-//  post
-	sqlStatement := `
-	INSERT INTO person (id,name, age, gender, address)
-	VALUES ($1, $2, $3, $4, $5)
-	RETURNING id
-`
+	sqlStatement := `INSERT INTO users (username,password) VALUES ($1, $2) RETURNING id`
 
-	err=db.QueryRow(sqlStatement, id,"Olejka", 123, "male", "Ekb").Scan(&id)
+	err=db.QueryRow(sqlStatement,"qw2e","z3xc").Scan(&id)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// get
-	rows,err:=db.Query(`SELECT * from person`)
+	rows,err:=db.Query(`SELECT * from users`)
 	for rows.Next() {
 		var id int
 		var name string
-		var age int
-		var gender string
-		var address string
-		err := rows.Scan(&id,&name,&age,&gender,&address) 
+		var pwd string
+		err := rows.Scan(&id,&name,&pwd) 
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Printf("ID: %d, Name: %s, Age: %d, Gender: %s, Address: %s\n", id, name, age, gender, address)
+		fmt.Printf("ID: %s, Name: %s\n", name,pwd)
 	}
 }
 
