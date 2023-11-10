@@ -7,35 +7,11 @@ import (
 	// "net/http"
 
 	"ToDoList/internal/service"
-	// "fmt"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/gin-gonic/gin"
 )
 
-// // tut old
-// type Handler struct {
-// 	message string
-// }
-
-// func (h Handler) Get() string {
-// 	return h.message
-// }
-
-// func (h Handler) HandleSubmit(w http.ResponseWriter, r *http.Request) {
-// 	if r.Method != http.MethodPost {
-// 		http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
-// 		return
-// 	}
-
-// 	u := new(model.User)
-// 	u.Set(r.FormValue("username"), r.FormValue("password"))
-// 	fmt.Println(u.Username, u.Pwd)
-
-// 	return
-// }
-
-// // tut new
 type Handler struct {
 	services *service.Service
 }
@@ -46,14 +22,14 @@ func NewHandler(services *service.Service) *Handler {
 
 func (h *Handler) InitRoutes() *gin.Engine {
 	router := gin.New()
+	// fmt.Print(1)
 	auth := router.Group("/auth")
 	{
-		// fmt.Println("AaA")
 		auth.POST("/sign-up", h.signUp)
 		auth.POST("/sign-in", h.signIn)
 	}
 
-	api := router.Group("/api")
+	api := router.Group("/api", h.userIdentity)
 	{
 		lists := api.Group("/lists")
 		{

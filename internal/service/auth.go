@@ -4,6 +4,7 @@ import (
 	model "ToDoList/internal/models"
 	"ToDoList/internal/repository"
 	"crypto/sha1"
+	"errors"
 	"fmt"
 	"time"
 
@@ -41,7 +42,7 @@ func (s *AuthService) generateHashPassword(pwd string) string {
 
 type tokenClaims struct {
 	jwt.StandardClaims
-	Id       int    `json:"-" db:"id"`
+	UserId int `json:"user_id"`
 }
 
 func (s *AuthService) GenerateToken(username, password string) (string, error) {
@@ -54,8 +55,28 @@ func (s *AuthService) GenerateToken(username, password string) (string, error) {
 		jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(TokenTL).Unix(),
 			IssuedAt:  time.Now().Unix(),
-		}, 
+		},
 		user.Id,
 	})
 	return token.SignedString([]byte(signInKey))
+}
+
+func (s *AuthService) ParseToken(accessToken string) (int, error) {
+	token, err := jwt.ParseWithClaims(accessToken, &tokenClaims{}, func(token *jwt.Token) (interface{}, error) {
+		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
+			return nil, errors.New("invalid Sign-in method")
+		}
+		return []byte(signInKey), nil
+	})
+
+	if err != nil {
+		return 0, err
+	}
+
+	claims,ok := token.Claims.(*tokenClaims)
+	if !ok {
+		return 0, errors.New("token Claims are not of type *tokenClaims")
+	}
+
+	return claims.UserId, nil
 }

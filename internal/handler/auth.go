@@ -2,14 +2,16 @@ package handler
 
 import (
 	model "ToDoList/internal/models"
+	"fmt"
 	"log"
 	"net/http"
-	// "fmt"
+
 	"github.com/gin-gonic/gin"
 )
 
 func (h* Handler) signUp(c *gin.Context) {
 	var input model.User
+	fmt.Print(2)
 	if err := c.BindJSON(&input); err != nil {
 		log.Fatal(err)
 		newErrorResponse(c,http.StatusBadRequest,err.Error())

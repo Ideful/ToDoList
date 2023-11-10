@@ -11,7 +11,6 @@ import (
 	"ToDoList/internal/service"
 	"log"
 	// "net/http"
-	// "github.com/spf13/viper"
 	// "github.com/Ideful/todolist/internal/mi"
 )
 
