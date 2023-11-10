@@ -18,7 +18,7 @@ import (
 func main() {
 	db, err := repository.CreatePostgresDB(repository.Config{
 		Host:     "localhost",
-		Port:     "5436",
+		Port:     "5432",
 		Username: "postgres",
 		Password: "qwerty",
 		DBName:   "postgres",
@@ -32,12 +32,10 @@ func main() {
 	handlers := handler.NewHandler(services)
 
 
-	s := new(server.Server)
 	// h := &handler.Handler{}
 	// http.HandleFunc("/submit", h.HandleSubmit)
+	s := new(server.Server)
 	if err := s.Run("8080", handlers.InitRoutes()); err != nil {
 		log.Fatalf("error: \t %s", err)
 	}
 }
-
-// func

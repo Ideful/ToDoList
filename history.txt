@@ -1,0 +1,1583 @@
+    1  make test
+    2  make gcov_report
+    3  open ./report/index
+    4  open ./report/index.html
+    5  make test
+    6  make clean
+    7  make test
+    8  make gcov_report
+    9  git add .
+   10  git commit -m "(2)(3) install namespace install dist"
+   11  make clean
+   12  git commit -m "(2)(3) install namespace install dist"
+   13  git add .
+   14  git commit -m "(2)(3) install namespace install dist"
+   15  git push
+   16  make gcov_report
+   17  git add .
+   18  git commit -m ")( fix"
+   19  make clean
+   20  git add .
+   21  git commit -m ")( fix"
+   22  git push
+   23  cd
+   24  cd test_tstks/tinek
+   25  open . -a Visual\ Studio\ Code
+   26  g++ 5a.cc&& ./a.out
+   27  5 6 
+   28  1 2 8 
+   29  2 3 6 
+   30  2 3 2 
+   31  3 1 4 
+   32  5 4 1 
+   33  cd
+   34  cd Downloads
+   35  sh cash.sh
+   36  cd
+   37  ..
+   38  ls
+   39  cd mirianfu
+   40  g++ 5a.cc&& ./a.out
+   41  g++ 5a.cc&& ./a.out >> 1.txt
+   42  rm 1.
+   43  rm 1.txt
+   44  g++ 5a.cc&& ./a.out >> 1.txt
+   45  ls
+   46  cd Downloads
+   47  sh cash.sh
+   48  g++ 1.cc&& ./a.out
+   49  g++ -g 1.cc&& ./a.out
+   50  g++ -fsanitize=address -g 1.cc&& ./a.out
+   51  ..
+   52  mkdir yandex
+   53  cd yandex
+   54  open . -a Visual\ Studio\ Code
+   55  touch 1.cpp
+   56  g++ 1.cpp&& ./a
+   57  g++ 1.cpp&& ./a.out
+   58  sh cash.sh
+   59  cd
+   60  cd 21/git/QT-Calculator
+   61  open . -a Visual\ Studio\ Code
+   62  brew install doxygen
+   63  cd
+   64  cd 21/git/QT-Calculator
+   65  make test
+   66  make gcov_report
+   67  make clean
+   68  rm -rf .vscode a.out.dSYM test_exec.dSYM
+   69  ls
+   70  make gcov_report
+   71  make clean
+   72  doxygen -g doxfile
+   73  doxygen doxfile
+   74  open html/index.html
+   75  rm -rf html latex
+   76  rm doxfile
+   77  doxygen -g Doxyfile
+   78  doxygen Doxyfile
+   79  open html/index.html
+   80  rm -rf html latex
+   81  rm Doxyfile
+   82  doxygen -g Doxyfile
+   83  doxygen Doxyfile
+   84  ls
+   85  rm Doxyfile
+   86  doxygen -g Doxyfile
+   87  rm Doxyfile
+   88  doxygen -g Doxyfile
+   89  rm Doxyfile
+   90  doxygen -g Doxyfile
+   91  rm Doxyfile
+   92  doxygen -g Doxyfile
+   93  doxygen Doxyfile
+   94  open html/index.html
+   95  rm -rf html latex
+   96  doxygen Doxyfile
+   97  open html/index.html
+   98  rm -rf latex
+   99  open html/index.html
+  100  cp html/index.html .
+  101  open index.html
+  102  rm -rf index.html html
+  103  make dvi
+  104  make clean
+  105  make dvi
+  106  make install
+  107  cd app/QT-Calculator
+  108  ls
+  109  make install
+  110  ..
+  111  make install
+  112  cd QT/QT-Calculator
+  113  cp * ../../../qwe
+  114  sh cash.sh
+  115  sh cash.sh
+  116  cd
+  117  cd 21/git/qwe
+  118  ls
+  119  ..
+  120  ls
+  121  rm -rf QT
+  122  make uninstall
+  123  make clean
+  124  rm -rf QT
+  125  cp qcustomplot.* ../QT-Calculator/QT-Calculator/
+  126  ls
+  127  rm -rf QT-Calculator
+  128  rm -rf build-QT-Calculator-Desktop_x86_darwin_generic_mach_o_64bit-Debug
+  129  rm -rf QT-Calculator
+  130  cd
+  131  cd Downloads
+  132  sh cash
+  133  sh cash.sh
+  134  c
+  135  cd
+  136  cd 21/git/qwe
+  137  cp qcustomplot.* ../QT-Calculator/QT/
+  138  ls
+  139  rm -rf build-QT-*
+  140  rm -rf QT
+  141  make test
+  142  make gcov_report 
+  143  mkdir QT
+  144  make clean
+  145  rm -rf build-QT-Desktop_x86_darwin_generic_mach_o_64bit-Debug
+  146  cp qcustomplot.* ../QT-Calculator/QT/QT-Calculator
+  147  cd
+  148  cd Downloads
+  149  sh cash.sh
+  150  ls
+  151  cd QT
+  152  rm -rf *
+  153  ls
+  154  sh cash.sh
+  155  cp qcustomplot.* ../QT-Calculator/QT/QT-Calculator
+  156  pwd
+  157  rm -rf *
+  158  cp qcustomplot.* ../QT-Calculator/QT/QT-Calculator
+  159  ls
+  160  cp qcustomplot.* ../QT-Calculator/QT/QT-Calculator
+  161  cp qcustomplot.* ../QT-Calculator/QT
+  162  ls
+  163  cd
+  164  rm -rf QT-Calculator
+  165  cp qcustomplot.* QT-Calculator
+  166  rm qcustomplot.cpp qcustomplot.h
+  167  ..
+  168  ls
+  169  make gcov_report
+  170  make install
+  171  make uninstall
+  172  make install
+  173  open ~
+  174  make dist
+  175  cd Downloads
+  176  sh cash.sh
+  177  cd
+  178  cd Desktop
+  179  ls
+  180  make clean
+  181  rm -r html
+  182  rm -rf test_exec.dSYM
+  183  make dvi
+  184  rm -rf html latex
+  185  make uninstall
+  186  ls
+  187  make uninstall
+  188  git add .
+  189  git commit -m "readme to be added"
+  190  git push
+  191  cd
+  192  cd cpp/
+  193  ls
+  194  cd popizdet
+  195  ls
+  196  cat qst.txt
+  197  cd
+  198  cd 21/OSNOVA/CPP3_SmartCalc_v2.0-1
+  199  ls
+  200  cd src
+  201  ls
+  202  rm -rf *
+  203  ls
+  204  make gcov_report
+  205  make install
+  206  cd
+  207  cd Downloads
+  208  sh cash.sh
+  209  make install
+  210  make clean
+  211  rm -rf test_exec.dSYM
+  212  make te
+  213  make test
+  214  make uninstall
+  215  make install
+  216  make uninstall
+  217  make clean
+  218  rm -rf test_exec.dSYM
+  219  make install
+  220  cd
+  221  cd 21/git/QT-Calculator
+  222  open . -a Visual\ Studio\ Code
+  223  touch main.cc
+  224  g++ *.cc && ./a.out
+  225  g++ main.cc
+  226  g++ main.cc && Model.cc
+  227  g++ main.cc Model.cc
+  228  g++ Model.cc
+  229  g++ 8.cc
+  230  g++ *.cc
+  231  ./a.out
+  232  g++ -g *.cc && ./a.out
+  233  export PATH=/usr/local/go/bin:$PATH
+  234  cd
+  235  cd Downloads
+  236  sh cash.sh
+  237  export PATH=/usr/local/go/bin:$PATH
+  238  clear
+  239  export PATH=/usr/local/go/bin:$PATH
+  240  clear
+  241  g++ -g *.cc && ./a.out
+  242  git pull
+  243  make install
+  244  sh cash
+  245  sh cash.sh 
+  246  cd
+  247  cd 21/OSNOVA/CPP3_SmartCalc_v2.0-1
+  248  src
+  249  make test
+  250  g++ -g *.cc && ./a.out
+  251  make install
+  252  g++ -g *.cc && ./a.out
+  253  make clean
+  254  touch main.cc
+  255  g++ main.cc
+  256  g++ main.cc Model.cc&& ./a
+  257  g++ main.cc Model.cc&& ./a.out
+  258  make test
+  259  make clean
+  260  make install
+  261  pwd
+  262  make test
+  263  g++ main.cc Model.cc&& ./a.out
+  264  g++ -g main.cc Model.cc&& ./a.out
+  265  make clean
+  266  make gcov_report
+  267  make install
+  268  make gcov_report
+  269  make clean
+  270  make uninstall
+  271  rm -rf a.out.dSYM test_exec.dSYM main.wcc
+  272  git add .
+  273  ..
+  274  materials/linters
+  275  ls
+  276  ls -a
+  277  git commit -m "last push"
+  278  git add .
+  279  git commit -m "last push"
+  280  git push
+  281  ..
+  282  pwd
+  283  git add .
+  284  git commit -m "last push"
+  285  git push
+  286  git branch
+  287  pwd
+  288  git add .
+  289  git add *
+  290  git commit -m "push"
+  291  git push
+  292  git switch main
+  293  git switch master
+  294  git pull
+  295  git branch develop
+  296  git switch develop
+  297  ls
+  298  git add .
+  299  git commit -m "push"
+  300  git push
+  301  rm .gitignore
+  302  git add .
+  303  git commit -m "push"
+  304  git push
+  305  ls
+  306  mkdir tmp
+  307  ls
+  308  cp * ../../tmp
+  309  cp -r * ../../tmp
+  310  git delete develop
+  311  git branch -d develop
+  312  cd tmp
+  313  ls
+  314  ..
+  315  rf -rf CPP3_SmartCalc_v2.0-1
+  316  rm -rf CPP3_SmartCalc_v2.0-1
+  317  git clone ssh://git@repos-ssh.21-school.ru:2289/students/CPP3_SmartCalc_v2.0.ID_353536/mirianfu_student.21_school.ru/CPP3_SmartCalc_v2.0-1.git
+  318  cd CPP3_SmartCalc_v2.0-1
+  319  cd src
+  320  git checkout -b develop
+  321  cp -r ../../tmp/*
+  322  cp  ../../tmp/*
+  323  cp ../../tmp/* .
+  324  cp -r ../../tmp/* .
+  325  open . -a Visual\ Studio\ Code
+  326  rm cons*
+  327  rm exa*
+  328  rm main.cpp
+  329  make gcov_report
+  330  make install
+  331  make clean
+  332  make uninstall
+  333  git add .
+  334  rm -rf test_exec.dSYM
+  335  git add .
+  336  git commit -m "push"
+  337  git push
+  338  cd
+  339  cd golang
+  340  ls
+  341  ..
+  342  cd golang
+  343  cat channels.go
+  344  cat first.go
+  345  cat noob_channels.go
+  346  ..
+  347  cd go
+  348  ls
+  349  ls -a
+  350  cd bin
+  351  ls
+  352  ..
+  353  rm -rf go
+  354  ls
+  355  cd golang
+  356  ls
+  357  open . -a Visual\ Studio\ Code
+  358  go run first.go
+  359  touch server.go
+  360  go run server.go
+  361  cd
+  362  cd dow
+  363  cd Downloads
+  364  sh cash.sh
+  365  sh clear.sh
+  366  cd
+  367  cd goinfre
+  368  sh script.sh
+  369  cd
+  370  cd Downloads
+  371  sh cash.sh
+  372  go run noob_channels.go
+  373  cd
+  374  cd goinfre
+  375  brew install asio
+  376  pwd
+  377  rm main.cc
+  378  cd
+  379  cd Downloads
+  380  sh cash.sh
+  381  ..
+  382  cd cpp
+  383  open . -a Visual\ Studio\ Code
+  384  cd
+  385  cd goinfre/.brew/Cellar/asio/1.28.1/
+  386  ls
+  387  open .
+  388  cd include/asio
+  389  lls
+  390  ls
+  391  ..
+  392  ls
+  393  pwd
+  394  gcd
+  395  cd
+  396  cpp
+  397  cd cpp
+  398  ls
+  399  g++ server.cc
+  400  ls
+  401  mkdir server
+  402  mv server.cc server.cc
+  403  mkdir server
+  404  mv server.cc server
+  405  cd server
+  406  g++ -g server.cc
+  407  touch qwe.cc
+  408  g++ -g qwe.cc
+  409  ls -a
+  410  touch .vscode
+  411  rm .vscode
+  412  mkdir .vscode
+  413  cd .vscode
+  414  touch c_cpp_properties.json
+  415  touch tasks.json
+  416  ..
+  417  cd .vscode
+  418  ..
+  419  g++ qwe.cc&& ./a.out
+  420  g++-g  qwe.cc&& ./a.out
+  421  g++ -g  qwe.cc&& ./a.out
+  422  cp ../.vscode/* .
+  423  ls
+  424  cp *.json .vscode
+  425  g++ -g qwe.cc&& ./a.out
+  426  cp qwe.cc ../
+  427  ..
+  428  g++ qwe.cc&& ./a.out
+  429  cd
+  430  pwd
+  431  cd
+  432  cd 21/OSNOVA
+  433  ls
+  434  git clone ssh://git@repos-ssh.21-school.ru:2289/students/CPP4_3DViewer_v2.0.ID_353537/Team__TL__mirianfu_student.21_school.ru_.CCdIsOZIQKe8EfXtFfXMbA/CPP4_3DViewer_v2.0-1.git
+  435  cd CPP4_3DViewer_v2.0-1
+  436  cd src
+  437  git branch
+  438  git checkout -b develop
+  439  ls
+  440  cd
+  441  cd 21/OSNOVA/CPP4_3DViewer_v2.0-1/src/
+  442  open . -a Visual\ Studio\ Code
+  443  make test
+  444  make tests
+  445  make gcov_report
+  446  cd
+  447  cd 21/OSNOVA/CPP3_SmartCalc_v2.0-1/src
+  448  cat Makefile
+  449  make gcov_report
+  450  make clean
+  451  make gcov_report
+  452  make dvi
+  453  make instal
+  454  make install
+  455  find .gitignore
+  456  find ball.txt
+  457  man find
+  458  find -type f -name ".gitignore"
+  459  find . -type f -name ".gitignore"
+  460  find . -type f -name "ball.*"
+  461  find . -type f -name "*gitignore*"
+  462  pwd
+  463  cd
+  464  cd 21/OSNOVA/C8_3DViewer_v1.0-1/src/obj
+  465  ls
+  466  cp * ~/21/OSNOVA/CPP4_3DViewer_v2.0-1/src/obj
+  467  cd
+  468  cd goinfre
+  469  ls
+  470  cd CPP4_3DViewer_v2.0-1-develop/src/obj
+  471  ls
+  472  cp * ~/21/OSNOVA/CPP4_3DViewer_v2.0-1/src/obj
+  473  make test
+  474  make tests
+  475  make run
+  476  make uninstall
+  477  make clean
+  478  make install
+  479  make run
+  480  cd
+  481  cd Downloads
+  482  sh cash.sh
+  483  make run
+  484  cd obj
+  485  rm cessna.txt cat.txt hand.txt pyramid.txt minicooper.txt shelf.txt
+  486  make ru
+  487  make run
+  488  ..
+  489  make run
+  490  make objtxt
+  491  make txtobj
+  492  make objtxt
+  493  git add .
+  494  git commit -m "fin"
+  495  git push
+  496  make uninstall
+  497  make clean
+  498  git add .
+  499  git commit -m "fin, build removed))"
+  500  git push
+  501  git pull
+  502  sh cash.sh
+  503  cd
+  504  cd Downloads
+  505  sh cash.sh
+  506  cd
+  507  mkdir java
+  508  cd java
+  509  mkdir java_piscine
+  510  cd
+  511  cd 21/OSNOVA/CPP4_3DViewer_v2.0-1/src/
+  512  make dvi
+  513  sh cash.sh
+  514  ls
+  515  cd
+  516  cd java/java_piscine
+  517  ls
+  518  ls -a
+  519  cd java_piscine
+  520  ks
+  521  ls
+  522  cd
+  523  cd Downloads
+  524  sh cash.sh
+  525  cd
+  526  cd java
+  527  ls
+  528  cd java_piscine
+  529  ls
+  530  ..
+  531  ls
+  532  pwd
+  533  rm -rf *
+  534  ls
+  535  mkdir server
+  536  rm server
+  537  rm -r server
+  538  curl https://refactoring.guru/ru/design-patterns/facade
+  539  curl yandex.ru
+  540  curl https://habr.com/ru/articles/210288/
+  541  ls
+  542  cd server
+  543  ls
+  544  cd src
+  545  ls
+  546  cd server
+  547  ls
+  548  ..
+  549  ht
+  550  html
+  551  cat index.html
+  552  cat -t index.html
+  553  cat -e index.html
+  554  cd java/server/src/server/
+  555  ls
+  556  cat server.java
+  557  cd java/just_tests/src/strings
+  558  ls
+  559  pwd
+  560  cd
+  561  cd Downloads
+  562  sh cash.sh
+  563  cd
+  564  cd goinfre
+  565  cd
+  566  cd Downloads
+  567  sh clean.sh
+  568  sh cash.sh
+  569  cd
+  570  cd 21/prov
+  571  ls
+  572  SQL3_RetailAnalitycs_v1.0-1
+  573  ls
+  574  ..
+  575  down
+  576  cd Downloads
+  577  sh cash.sh
+  578  cd
+  579  cd 21/OSNOVA/CPP4_3DViewer_v2.0-1/src
+  580  cat Makefile
+  581  open .
+  582  ls
+  583  cd ..
+  584  ls
+  585  ls -la 
+  586  cd mirianfu
+  587  ls
+  588  ls -la 
+  589  Downloads
+  590  sh cash.sh
+  591  cd java/
+  592  mkdir vidosi_alekseya
+  593  /Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 "mirianfu"
+  594  /Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 "postgres"
+  595  cd Downloads
+  596  sh cash.sh
+  597  /Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 "postgres"
+  598  psql
+  599  /Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 "mirianfu"
+  600  ls
+  601  cd src
+  602  ls
+  603  cd Zero_Try
+  604  ls
+  605  javac poehali.java
+  606  ls
+  607  java poehali
+  608  javac poetical.java
+  609  java poetical
+  610  javac poetical.java
+  611  javac Main.java
+  612  java Main
+  613  ls
+  614  ls -lha
+  615  cd
+  616  cd goinfre
+  617  ls
+  618  systemctl status postgresql
+  619  cd
+  620  systemctl status postgresql
+  621  psql
+  622  cd
+  623  cd Downloads
+  624  sh cash.sh
+  625  sh clea
+  626  sh clean.sh
+  627  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "mirianfu"
+  628  select * from person;
+  629  ls
+  630  cd
+  631  cd go
+  632  cd
+  633  cd goinfre
+  634  cp postgresql-42.6.0.jar ~/java/db_work/
+  635  cd
+  636  cd 21/git
+  637  ls
+  638  rm -r qwe
+  639  ls
+  640  cd 3D_Viewer-C-CPP-
+  641  ls
+  642  open by_implementator
+  643  ..
+  644  rm -rf 3D_Viewer-C-CPP-
+  645  git clone git@github.com:Ideful/3D_Viewer_CPP.git
+  646  ls
+  647  cd
+  648  cd 21/OSNOVA/CPP4_3DViewer_v2.0-1
+  649  cd src
+  650  ls
+  651  cp -r * ~/21/git/3D_Viewer_CPP
+  652  cd 3D_Viewer_CPP
+  653  ls
+  654  git add .
+  655  git commit -m "pushed to git"
+  656  git push
+  657  cd src/d03_multithreading/ex00
+  658  ls
+  659  javac ex00.java
+  660  java ex00
+  661  javac ex00.java
+  662  java ex00
+  663  ls
+  664  java ex00.class
+  665  cd
+  666  cd java/java_piscine
+  667  javac d03_multithreading/ex00/ex00.java\n
+  668  javac src/d03_multithreading/ex00/ex00.java 
+  669  java src.d03_multithreading.ex00.ex00
+  670  ls
+  671  pwd
+  672  ls
+  673  cd src
+  674  ls
+  675  cd d03_multithreading
+  676  java ex00.c
+  677  java ex00.ex00
+  678  cd
+  679  cd go
+  680  ls
+  681  ..
+  682  cd golang
+  683  open . -a Visual\ Studio\ Code
+  684  export PATH=/usr/local/go/bin:$PATH
+  685  clear
+  686  mkdir tg_bot
+  687  touch main.go
+  688  rm main.go
+  689  touch main.go
+  690  cd tg_bot
+  691  touch main.go
+  692  export PATH=/usr/local/go/bin:$PATH
+  693  clear
+  694  go main.go
+  695  go run main.go
+  696  go run main.go -token-bot-token
+  697  go run main.go bot -token-bot-token 'my token'
+  698  mkdir clients
+  699  cd clients
+  700  mkdir telegram
+  701  cd telegram
+  702  touch telegram.go
+  703  touch types.go
+  704  cd
+  705  cd Downloads
+  706  sh cash.sh
+  707  go run main.go
+  708  export PATH=/usr/local/go/bin:$PATH
+  709  clear
+  710  mkdir lib
+  711  lib
+  712  mkdir e
+  713  e
+  714  touch e.go
+  715  cd
+  716  ..
+  717  touch q.cc
+  718  g++ q.cc&& ./a.out
+  719  xport PATH=/usr/local/go/bin:$PATH
+  720  clear
+  721  pwd
+  722  g++ q.cc&& ./a.out
+  723  ls
+  724  g++ q.cc&& ./a.out
+  725  cd
+  726  cd 21/OSNOVA
+  727  mkdir golang_piscine
+  728  cd golang_piscine
+  729  git clone ssh://git@repos-ssh.21-school.ru:2289/students/Go_Day00.ID_376214/mirianfu_student.21_school.ru/Go_Day00-1.git
+  730  cd Go_Day00-1
+  731  git checkout -b develop
+  732  open . -a Visual\ Studio\ Code
+  733  cd src
+  734  touch 00.go
+  735  export PATH=/usr/local/go/bin:$PATH
+  736  clear
+  737  go run 00.go
+  738  cd
+  739  cd Downloads
+  740  sh cash.sh
+  741  cd
+  742  sh goinfre
+  743  cd goinfre
+  744  cd
+  745  xport PATH=/usr/local/go/bin:$PATH
+  746  clear
+  747  export PATH=/usr/local/go/bin:$PATH
+  748  clear
+  749  cd Downloads
+  750  sh cash.sh
+  751  cd
+  752  cd test_tstks/tinek/
+  753  cat 5.cc c
+  754  g++ q.cc
+  755  ./a.out
+  756  export PATH=/usr/local/go/bin:$PATH
+  757  clear
+  758  cd
+  759  cd 21/git/QT-Calculator/
+  760  ls
+  761  cat Model.cc
+  762  g++ q.cc && ./a.out
+  763  infected_computer_2 405060
+  764  g++ q.cc && ./a.out
+  765  infected_computer_1 203040
+  766  g++ q.cc && ./a.out
+  767  g++ q.cc
+  768  g++ q.cc && ./a.out
+  769  g++-g  q.cc && ./a.out
+  770  g++ -g  q.cc && ./a.out
+  771  export PATH=/usr/local/go/bin:$PATH
+  772  clear
+  773  g++-g  q.cc && ./a.out
+  774  g++ q.cc && ./a.out
+  775  cd
+  776  cd Downloads
+  777  sh cash.sh
+  778  g++ q.cc
+  779  ./a.out
+  780  g++ q.cc && ./a.out
+  781  rm a.out
+  782  g++ q.cc && ./a.out
+  783  w
+  784  g++ q.cc && ./a.out
+  785  g++ -g q.cc && ./a.out
+  786  g++ q.cc && ./a.out
+  787  touch q2.cc
+  788  g++ q.cc && ./a.out
+  789  g++ q2.cc && ./a.out
+  790  g++ q2.cc&& ./a.out
+  791  cd
+  792  cd 21/OSNOVA/golang_piscine/Go_Day00-1/src
+  793  ls
+  794  go run 00.go
+  795  cd
+  796  cd cpp/popizdet
+  797  cat qst.txt qst.txt
+  798  cd
+  799  cd 21/OSNOVA/golang_piscine
+  800  cd Go_Day00-1/src
+  801  go run 00.go
+  802  git add .
+  803  git commit -m "f"
+  804  git push
+  805  юю
+  806  ..
+  807  ls
+  808  git clone ssh://git@repos-ssh.21-school.ru:2289/students/Go_Day01.ID_376218/mirianfu_student.21_school.ru/Go_Day01-1.git
+  809  cd Go_Day01-1
+  810  git checkout -b develop
+  811  export PATH=/usr/local/go/bin:$PATH
+  812  clear
+  813  export PATH=/usr/local/go/bin:$PATH
+  814  export PATH=/usr/local/go/bin:$PATH
+  815  clear
+  816  ls
+  817  open . -a Visual\ Studio\ Code
+  818  export PATH=/usr/local/go/bin:$PATH
+  819  clear
+  820  cd
+  821  cd 21/OSNOVA/golang_piscine/Go_Day00-1/src
+  822  touch Makefile
+  823  make build
+  824  cd src
+  825  touch 01.go
+  826  export PATH=/usr/local/go/bin:$PATH
+  827  clear
+  828  export PATH=/usr/local/go/bin:$PATH
+  829  clear
+  830  cd
+  831  cd Downloads
+  832  sh cash.sh
+  833  go --version
+  834  go -version
+  835  go version
+  836  touch go.mod
+  837  rm go.mod
+  838  ..
+  839  cd src
+  840  go mod init
+  841  touch go.mod
+  842  ls
+  843  open .
+  844  sh cash.sh
+  845  touch Makefile
+  846  mkdir 00
+  847  ls -a
+  848  make
+  849  ls
+  850  ls *.zip
+  851  cd
+  852  cd goinfre
+  853  ls
+  854  ls -a
+  855  open .
+  856  ls
+  857  ..
+  858  mkdir Bob
+  859  cp -r Go_Day01-1 ~/21/OSNOVA/golang_piscine/Bob
+  860  rm -rf Go_Day01-1 Go_Day01-1.zip
+  861  cd Go_Day01-1/src
+  862  mkdir xml_json_files
+  863  cd xml_json_files
+  864  touch og.xml
+  865  touch stolen.json
+  866  ..
+  867  make
+  868  ..
+  869  cd Bob
+  870  cd Go_Day01-1/src/ex00
+  871  ls
+  872  go run main.go
+  873  go build -o runner main.go
+  874  ./runner -f ../stolen_database.json
+  875  ./runner -f ../original_database.xml
+  876  history
+  877  make
+  878  ls
+  879  make
+  880  rm readDB
+  881  cd 00
+  882  go build -o 00.go
+  883  go build -o readDB 00.go
+  884  ./readDB -f
+  885  go build -o readDB 00.go
+  886  ./readDB -f
+  887  go build -o readDB 00.go
+  888  ./readDB -f
+  889  go build -o readDB 00.go
+  890  ./readDB -f
+  891  go build -o readDB 00.go
+  892  ./readDB -f
+  893  go build -o readDB 00.go
+  894  ./readDB -f
+  895  ./readDB -g
+  896  ..
+  897  make
+  898  ls
+  899  make clean
+  900  cd 00
+  901  go build -o qwe 00.go
+  902  qwe 
+  903  ./qwe
+  904  ./qwe -f 
+  905  ./qwe -f asd
+  906  qwe 
+  907  go build -o qwe 00.go
+  908  ./qwe -f qwe
+  909  ./qwe -f -g
+  910  go build -o run 00.go
+  911  ./run -f ../files/stolen.json
+  912  ./run -f ../files/stolen.jso
+  913  ./run -f ../files/og.xml
+  914  ls
+  915  rm qwe readDB run
+  916  touch parser.go
+  917  cd
+  918  cd golang/tg_bot
+  919  cp q.cc q2.cc ~/test_tstks/yandex
+  920  cd
+  921  cd test_tstks/yandex
+  922  open . -a Visual\ Studio\ Code
+  923  touch 00.cpp
+  924  touch a.cpp
+  925  g++ a.cpp
+  926  g++ a.cpp&& ./a.out
+  927  1
+  928  cd
+  929  cd Downloads
+  930  sh cash.sh
+  931  g++ a.cpp&& ./a.out
+  932  980 3 1 10 31 37
+  933  g++ a.cpp&& ./a.out
+  934  980 3 1 10 31 37
+  935  g++ a.cpp&& ./a.out
+  936  g++ a.cpp&& ./a.out\n: 1697189090:0;g++ a.cpp&& ./a.out\\n1001 5 20 14 15 16\n9009 9 11 12 21 11\n
+  937  g++ a.cpp&& ./a.out\n1001 5 20 14 15 16\n9009 9 11 12 21 11\n
+  938  g++ a.cpp&& ./a.out
+  939  touch b.cpp
+  940  touch c.cpp
+  941  g++ a.cpp&& ./a.out
+  942  21
+  943  g++ a.cpp&& ./a.out
+  944  g++ c.cpp&& ./a.out
+  945  a
+  946  g++ c.cpp&& ./a.out
+  947  a < 3
+  948  b > 1
+  949  b < 3
+  950  g++ c.cpp&& ./a.out
+  951  2 2 3\na b\n1 1\n2 2\na < 3\nb > 1\nb < 3\n
+  952  g++ c.cpp&& ./a.out
+  953  g++ -std=c++17 c.cpp
+  954  touch b.cpp
+  955  g++ b.cpp&& ./a.out
+  956  1 2
+  957  1 2 3 4 5
+  958  g++ b.cpp&& ./a.out
+  959  1 2
+  960  g++ b.cpp&& ./a.out
+  961  1
+  962  2
+  963  1
+  964  2
+  965  g++ b.cpp&& ./a.out
+  966  1 2
+  967  g++ b.cpp&& ./a.out
+  968  2 5 10
+  969  1 2
+  970  g++ b.cpp&& ./a.out
+  971  1 2
+  972  g++ b.cpp&& ./a.out
+  973  1 2
+  974  g++ b.cpp&& ./a.out
+  975  2 5 10
+  976  1 2
+  977  g++ b.cpp&& ./a.out
+  978  1 2
+  979  g++ b.cpp&& ./a.out
+  980  1 2
+  981  g++ b.cpp&& ./a.out
+  982  1 2
+  983  g++ b.cpp&& ./a.out
+  984  1 2
+  985  g++ b.cpp&& ./a.out
+  986  1 2
+  987  1 2 3 4 5
+  988  g++ b.cpp&& ./a.out
+  989  1 2
+  990  1 2 3 4 5
+  991  g++ b.cpp&& ./a.out
+  992  1 2
+  993  g++ b.cpp&& ./a.out
+  994  1 2
+  995  g++ b.cpp&& ./a.out
+  996  2
+  997  g++ b.cpp&& ./a.out
+  998  ifconfig
+  999  cd
+ 1000  cd dow
+ 1001  down
+ 1002  cd Downloads
+ 1003  ls
+ 1004  open .
+ 1005  cd
+ 1006  cd goinfre
+ 1007  ls
+ 1008  mv Язык_программирования_Go_2016_Алан_Донован,_Брайан_Керниган.pdf ~/golang/
+ 1009  cd
+ 1010  cd goinfre
+ 1011  ls
+ 1012  cd
+ 1013  cd golang
+ 1014  open .
+ 1015  cd
+ 1016  cd golang
+ 1017  open . -a Visual\ Studio\ Code
+ 1018  touch switch.go
+ 1019  go run switch.go
+ 1020  gopath
+ 1021  go gopath
+ 1022  go help
+ 1023  gopath
+ 1024  go gopath
+ 1025  gopath 21
+ 1026  go run switch.go
+ 1027  go doc fmt.Println
+ 1028  go get golang.org/x/tools/cmd/goimports
+ 1029  cd
+ 1030  cd golang
+ 1031  open . -a Visual\ Studio\ Code
+ 1032  touch nasledovanie.go
+ 1033  go run nasledovanie.go
+ 1034  export PATH=/usr/local/go/bin:$PATH
+ 1035  clear
+ 1036  export PATH=/usr/local/go/bin:$PATH
+ 1037  clear
+ 1038  cd
+ 1039  cd Downloads
+ 1040  sh cash.sh
+ 1041  ls
+ 1042  cd
+ 1043  cd goinfre
+ 1044  ls
+ 1045  mv jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip ~/Desktop
+ 1046  mv jetbra.zip ~/Desktop
+ 1047  cd
+ 1048  cd 21/OSNOVA/CPP3_SmartCalc_v2.0-1
+ 1049  cd src
+ 1050  cat Makefile
+ 1051  cd
+ 1052  cd go
+ 1053  cd
+ 1054  cd goinfre
+ 1055  mv hyeta.tar.gz ~/Desktop
+ 1056  ls
+ 1057  cd
+ 1058  cd Desktop
+ 1059  tar -xvf hyeta.tar.gz
+ 1060  cd 
+ 1061  cd goinfre
+ 1062  ls
+ 1063  cd
+ 1064  cd Downloads
+ 1065  sh cash.sh 
+ 1066  cd
+ 1067  cd Desktop
+ 1068  mkdir qwe
+ 1069  cd qwe
+ 1070  mkdir plugins-jetbrains
+ 1071  mkdir config-jetbrains
+ 1072  mkdir scripts
+ 1073  mkdir vmoptions
+ 1074  touch interfaces.go
+ 1075  go run interfaces.go
+ 1076  touch test.go
+ 1077  go run test.go
+ 1078  cd
+ 1079  cd 21/OSNOVA/golang_piscine/Go_Day01-1
+ 1080  src
+ 1081  cd 00
+ 1082  ls
+ 1083  cat 00.go
+ 1084  cat parser.go
+ 1085  open . -a Visual\ Studio\ Code
+ 1086  cd
+ 1087  cd golang
+ 1088  ls
+ 1089  touch stepikjson.go
+ 1090  touch text.json
+ 1091  go run stepikjson.go
+ 1092  touch client.go
+ 1093  go run client.go
+ 1094  touch server.go
+ 1095  mkdir s
+ 1096  cd s
+ 1097  go run client.go
+ 1098  go run server.go
+ 1099  cd
+ 1100  cd golang/s
+ 1101  go run client.go
+ 1102  go run server.go
+ 1103  go run client.go
+ 1104  touch expl.go
+ 1105  go run expl.go
+ 1106  go run server.go
+ 1107  go run client.go
+ 1108  go run server.go
+ 1109  cd
+ 1110  cd goinfre
+ 1111  ls
+ 1112  cd
+ 1113  cd golang
+ 1114  ls
+ 1115  open . -a Visual\ Studio\ Code
+ 1116  go run server.go
+ 1117  go run client.go
+ 1118  go run server.go
+ 1119  go run client.go
+ 1120  go run server.go
+ 1121  go run client.go
+ 1122  cd
+ 1123  cd Downloads
+ 1124  export PATH=/usr/local/go/bin:$PATH
+ 1125  clear
+ 1126  sh cash.sh export PATH=/usr/local/go/bin:$PATH
+ 1127  sh cash.sh
+ 1128  ls
+ 1129  cd
+ 1130  cd goinfre
+ 1131  cat Black\ White\ Minimalist\ CV\ Resume.pdf
+ 1132  ls
+ 1133  cd
+ 1134  cd golang
+ 1135  ls
+ 1136  mkdir tst
+ 1137  mv *.go tst
+ 1138  mv -r s server_test
+ 1139  mv s server_test
+ 1140  CD tst
+ 1141  touch stepik_json.go
+ 1142  export PATH=/usr/local/go/bin:$PATH
+ 1143  clear
+ 1144  cd
+ 1145  cd golang
+ 1146  ls
+ 1147  cd tst
+ 1148  ls
+ 1149  open . -a Visual\ Studio\ Code
+ 1150  export PATH=/usr/local/go/bin:$PATH
+ 1151  clear
+ 1152  ls
+ 1153  go run stepikjson.go
+ 1154  ..
+ 1155  mv text.json ./tst
+ 1156  tst
+ 1157  go run stepikjson.go
+ 1158  touch json_okved.go
+ 1159  go run json_okved.go
+ 1160  cd
+ 1161  cd goinfre
+ 1162  ls
+ 1163  mv data-20190514T0100.json ~/golang/tst
+ 1164  cd
+ 1165  cd golang/tst
+ 1166  go run json_okved.go
+ 1167  touch workwithfiles.go
+ 1168  go run workwithfiles.go
+ 1169  curl https://pkg.go.dev/os\#File
+ 1170  touch fetch.go
+ 1171  go run fetch.go
+ 1172  go run fetch.go yandex.ru
+ 1173  go build fetch.go
+ 1174  ./fetch http://gopl.io
+ 1175  ./fetch http://yandex.ru
+ 1176  ./fetch https://pkg.go.dev/os\#File
+ 1177  ./fetch yandex.ru
+ 1178  ./fetch ya.ru
+ 1179  ./fetch http://yandex.ru
+ 1180  ./fetch https://yandex.ru/pogoda/ru-RU/details\?lat\=55.755863\&lon\=37.6177\&via\=ms
+ 1181  ..
+ 1182  cd server_test
+ 1183  ls
+ 1184  go run server.go
+ 1185  export PATH=/usr/local/go/bin:$PATH
+ 1186  clear
+ 1187  ..
+ 1188  cd tst
+ 1189  cat server.go
+ 1190  cd tst
+ 1191  go run server.go
+ 1192  xport PATH=/usr/local/go/bin:$PATH
+ 1193  clear
+ 1194  export PATH=/usr/local/go/bin:$PATH
+ 1195  clear
+ 1196  cd
+ 1197  cd golang
+ 1198  ls
+ 1199  mkdir todolist
+ 1200  cd todolist
+ 1201  open . -a Visual\ Studio\ Code
+ 1202  tuouch go.mod
+ 1203  touch go.mod
+ 1204  mkdir cmd
+ 1205  touch ./cmd/main.go
+ 1206  mkdir internal
+ 1207  touch README.md
+ 1208  cd internal
+ 1209  mkdir app config database models services transport
+ 1210  ..
+ 1211  mkdir pkg configs api build deployments docs
+ 1212  mkdir web
+ 1213  touch Makefile
+ 1214  ..
+ 1215  git clone git@github.com:Ideful/ToDoList.git
+ 1216  cd todolist
+ 1217  git clone git@github.com:Ideful/ToDoList.git
+ 1218  ls
+ 1219  mv Makefile README.md api build cmd configs deployments docs go.mod internal pkg web
+ 1220  cd web/
+ 1221  mv Makefile README.md api build cmd configs deployments docs go.mod internal pkg ./../ToDoList
+ 1222  ..
+ 1223  mv web ToDoList
+ 1224  cd ToDoList
+ 1225  make
+ 1226  go mod edit -module=example.com/mod
+ 1227  ls
+ 1228  rm go.mod
+ 1229  go mod init ToDoList
+ 1230  go get os
+ 1231  go get -u
+ 1232  export PATH=/usr/local/go/bin:$PATH
+ 1233  clear
+ 1234  make
+ 1235  go get github.com/gorilla/mux
+ 1236  пщ кгтс
+ 1237  make
+ 1238  export PATH=/usr/local/go/bin:$PATH
+ 1239  clear
+ 1240  cd web
+ 1241  touch register.html
+ 1242  touch mainpage.html
+ 1243  go get github.com/gorilla/mux
+ 1244  make
+ 1245  touch index.html
+ 1246  make
+ 1247  git add *
+ 1248  git commit -m "now i see page. should work on reg/auth pages and connect server to DB"
+ 1249  git push
+ 1250  make
+ 1251  ls
+ 1252  mkdir storage
+ 1253  go get github.com/lib/pq
+ 1254  createdb
+ 1255  man createdb
+ 1256  make
+ 1257  cd
+ 1258  cd golang/todolist
+ 1259  cd ToDoList
+ 1260  make
+ 1261  createdb qwe
+ 1262  createdb DB
+ 1263  ls -a
+ 1264  make
+ 1265  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "DB"
+ 1266  make
+ 1267  юю
+ 1268  ..
+ 1269  open . -a Visual\ Studio\ Code
+ 1270  export PATH=/usr/local/go/bin:$PATH
+ 1271  clear
+ 1272  touch strings.go
+ 1273  go run strings.go
+ 1274  createdb qwe
+ 1275  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p1234 "DB"
+ 1276  createdb qwe
+ 1277  goinfre
+ 1278  ls -a
+ 1279  touch bits.go
+ 1280  go run bits.go
+ 1281  cd
+ 1282  св вщц
+ 1283  cd Downloads
+ 1284  sh cash.sh
+ 1285  cd
+ 1286  cd Downloads
+ 1287  sh cash.sh
+ 1288  cd
+ 1289  find clear.sh
+ 1290  find
+ 1291  find -f clear
+ 1292  ls
+ 1293  cd Downloads
+ 1294  ls
+ 1295  ..
+ 1296  cd goinfre
+ 1297  ls
+ 1298  make
+ 1299  cd
+ 1300  cd goinfre
+ 1301  sh clea
+ 1302  sh clean.sh
+ 1303  cd
+ 1304  cd Downloads
+ 1305  sh cash.sh
+ 1306  sh script
+ 1307  cd
+ 1308  cd goinfre
+ 1309  sh script.sh
+ 1310  cd
+ 1311  cd Downloads
+ 1312  sh cash.sh
+ 1313  cd
+ 1314  cd goinfre
+ 1315  mv script.sh ~/Downloads
+ 1316  ls
+ 1317  mv script\ \(1\).sh ~/Downloads
+ 1318  make
+ 1319  touch sobes.go
+ 1320  go run sobes.go
+ 1321  postgres
+ 1322  psql -U postgres -c 'SHOW config_file'
+ 1323  ls
+ 1324  ..
+ 1325  ls
+ 1326  ..
+ 1327  ls
+ 1328  cd etc
+ 1329  postgres
+ 1330  ls
+ 1331  posgtres
+ 1332  postgres
+ 1333  postgres -D
+ 1334  postgres --help
+ 1335  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "postgres"
+ 1336  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "DB"
+ 1337  cd
+ 1338  cd golang/todolist/ToDoList/storage
+ 1339  go run storage.go
+ 1340  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "mirianfu"
+ 1341  go run storage.go
+ 1342  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "DB"
+ 1343  go run storage.go
+ 1344  export PATH=/usr/local/go/bin:$PATH
+ 1345  clear
+ 1346  export PATH=/usr/local/go/bin:$PATH
+ 1347  clear
+ 1348  cd stor
+ 1349  cd ToDoList/storage
+ 1350  go run storage.go
+ 1351  ToDoList
+ 1352  git add .
+ 1353  git commit -m "some starting fun with DB"
+ 1354  git push
+ 1355  make
+ 1356  ..
+ 1357  cd ToDoList
+ 1358  ls
+ 1359  ls -d
+ 1360  internal
+ 1361  touch server.go
+ 1362  ..
+ 1363  make
+ 1364  go get github.com/Ideful/todolist/internal/server.go
+ 1365  make
+ 1366  touch internal/handler.go
+ 1367  make
+ 1368  mkdir ./internal/handler
+ 1369  mv internal/handler internal/handler
+ 1370  mv internal/handler.go internal/handler
+ 1371  make
+ 1372  go doc http.get
+ 1373  make
+ 1374  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "DB"
+ 1375  cd
+ 1376  psql -U Me
+ 1377  create database todolist;
+ 1378  history
+ 1379  make
+ 1380  qwe
+ 1381  eqwqw
+ 1382  e
+ 1383  createdb todolist
+ 1384  make
+ 1385  touch ./internal/database/user user.go
+ 1386  touch user.go ./internal/database/user 
+ 1387  rm user.go
+ 1388  internal/database
+ 1389  touch user.go
+ 1390  ..
+ 1391  cd internal/database
+ 1392  ls
+ 1393  rm -rf *
+ 1394  ..
+ 1395  cd app
+ 1396  cd internal/app
+ 1397  ..
+ 1398  cd models
+ 1399  touch user.go
+ 1400  ../..
+ 1401  docker pull postgres
+ 1402  make
+ 1403  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "todolist"
+ 1404  migrate go.mod
+ 1405  brew install migrate
+ 1406  export PATH=/usr/local/go/bin:$PATH
+ 1407  clear
+ 1408  cd
+ 1409  cd goinfre
+ 1410  ls -a
+ 1411  cd storage
+ 1412  go run storage.go
+ 1413  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "DB"
+ 1414  ..
+ 1415  make
+ 1416  git add .
+ 1417  git commit -m "in progress"
+ 1418  git push
+ 1419  make
+ 1420  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "todolist"
+ 1421  go get github.com/spf13/viper
+ 1422  cd
+ 1423  cd Downloads
+ 1424  sh cash.sh
+ 1425  docker pull postgres
+ 1426  sh dock.sh
+ 1427  ls -a
+ 1428  find dock
+ 1429  find dock.sh
+ 1430  docker pull postgres
+ 1431  sudo apt install migrate
+ 1432  brew 
+ 1433  brew install migrate
+ 1434  cd
+ 1435  cd goinfre
+ 1436  ls -a
+ 1437  brew install golang-migrate
+ 1438  brew update golang-mgrate
+ 1439  brew update golang-migrate
+ 1440  brew upgrade golang-migrate
+ 1441  migrate create -ext sql -dir ./schema -seq init
+ 1442  go get github.com/jmoiron/sqlx
+ 1443  make
+ 1444  man go
+ 1445  go --version
+ 1446  go version
+ 1447  sudo go update
+ 1448  go update
+ 1449  make
+ 1450  go get github.com/spf13/viper@v1.17.0
+ 1451  make
+ 1452  go versions
+ 1453  go version
+ 1454  curl -O https://dl.google.com/go/go1.20.linux-amd64.tar.gz
+ 1455  make
+ 1456  grep * golang.org/x/exp/slog
+ 1457  make
+ 1458  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "todolist"
+ 1459  make
+ 1460  /Applications/Postgres.app/Contents/Versions/15/bin/psql -p5432 "todolist"
+ 1461  docker run --name=todo-db -e POSTGRES_PASSWORD='qwerty' -p 5432 -d --rm postgres
+ 1462  docker ps
+ 1463  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/posgres?sslmode=\disable' up
+ 1464  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1465  make
+ 1466  docker ps
+ 1467  docker exec -it 709dffba39d9 /bin/bash
+ 1468  docker ps
+ 1469  docker exec -it 709dffba39d9 /bin/bash
+ 1470  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=\disable' up
+ 1471  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1472  docker ps
+ 1473  docker exec -it 709dffba39d9 /bin/bash
+ 1474  man migrate
+ 1475  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1476  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' down\n
+ 1477  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1478  docker exec -it 709dffba39d9 /bin/bash
+ 1479  docker pull postgres
+ 1480  docker run --name=todolist-db -e POSTGRES_PASSWORD='qwerty' -p 5436:5432 -d --rm postgres
+ 1481  docker ps
+ 1482  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' down\n
+ 1483  migrate
+ 1484  migrate source
+ 1485  migrate -f
+ 1486  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5436/postgres?sslmode=disable' up
+ 1487  docker ps
+ 1488  docker exec -it 342b35dcb52e
+ 1489  docker exec -it 342b35dcb52e bin/bash
+ 1490  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5436/postgres?sslmode=disable' down
+ 1491  docker exec -it 342b35dcb52e bin/bash
+ 1492  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5436/postgres?sslmode=disable' up
+ 1493  docker exec -it 342b35dcb52e bin/bash
+ 1494  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5436/postgres?sslmode=disable' down
+ 1495  docker exec -it 342b35dcb52e bin/bash
+ 1496  make
+ 1497  go get -u github.com/gin-gonic/gin
+ 1498  cd
+ 1499  cd Downloads
+ 1500  sh cash.sh
+ 1501  make
+ 1502  brew install go
+ 1503  make
+ 1504  docker exec -it 342b35dcb52e bin/bash
+ 1505  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5436/postgres?sslmode=disable' up
+ 1506  docker exec -it 342b35dcb52e bin/bash
+ 1507  exi
+ 1508  exit
+ 1509  docker exec -it 342b35dcb52e bin/bash                                                                   
+ 1510  mak
+ 1511  make
+ 1512  docker exec -it 342b35dcb52e bin/bash
+ 1513  make
+ 1514  docker exec -it 342b35dcb52e bin/bash                                                                   
+ 1515  make
+ 1516  grep -r "CreateUser"
+ 1517  grep -r "CreateUser" .
+ 1518  make
+ 1519  cd
+ 1520  cd golang/todolist/ToDoList/storage
+ 1521  go run storage_example.go
+ 1522  make
+ 1523  go run storage_example.go
+ 1524  make
+ 1525  go run storage_example.go
+ 1526  make
+ 1527  git add .
+ 1528  git commit -m "db is workin now"
+ 1529  git push
+ 1530  du -ah .
+ 1531  ls -a
+ 1532  cd .git
+ 1533  ls
+ 1534  ..
+ 1535  make
+ 1536  св
+ 1537  cd
+ 1538  cd 21/OSNOVA/C7_SmartCalc_v1.0-3/src/qt
+ 1539  ls
+ 1540  cat mainwindow.ui
+ 1541  cd
+ 1542  cd golang/todolist/ToDoList
+ 1543  ls
+ 1544  du -ah .
+ 1545  rm go1.20.linux-amd64.tar.gz
+ 1546  git add .
+ 1547  git commit -m "wrong file deletion"
+ 1548  git push
+ 1549  export PATH=/usr/local/go/bin:$PATH
+ 1550  clear
+ 1551  export PATH=/usr/local/go/bin:$PATH
+ 1552  clear
+ 1553  touch q.w
+ 1554  cat q.w | grep "uid":1
+ 1555  cat q.w | grep "\"uid\":1"
+ 1556  go run q.go
+ 1557* cd
+ 1558* cd Downloads
+ 1559* cp dock.sh ~/golang/todolist/ToDoList/
+ 1560  history
+ 1561  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1562  sh docker-c
+ 1563  ls
+ 1564  cd ToDoList
+ 1565  sh dock
+ 1566  sh dock.sh
+ 1567* cd
+ 1568* cd goinfre
+ 1569* sh install_brew_by_manhunte.sh
+ 1570* brew install go-migrate
+ 1571* brew install golang-migrate
+ 1572  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1573  docker pull postgres
+ 1574  docker ps
+ 1575  docker run --name=todo-db -e POSTGRES_PASSWORD='qwerty' -p 5436:5432 -d --rm postgres
+ 1576  docker ps
+ 1577  docker exec -it 45e13b7d7e31 /bin/bash
+ 1578  make
+ 1579* cd
+ 1580  docker ps
+ 1581  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n
+ 1582  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' down\n
+ 1583  migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' up\n

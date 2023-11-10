@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	db,err:= sql.Open("postgres","user=postgres port=5436 sslmode=disable dbname=postgres password=qwerty" )	
+	db,err:= sql.Open("postgres","user=postgres port=5432 sslmode=disable dbname=postgres password=qwerty" )	
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -23,7 +23,7 @@ func main() {
 	var id int
 	sqlStatement := `INSERT INTO users (username,password) VALUES ($1, $2) RETURNING id`
 
-	err=db.QueryRow(sqlStatement,"qw2e","z3xc").Scan(&id)
+	err=db.QueryRow(sqlStatement,"qww2e","z3xc").Scan(&id)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -38,7 +38,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Printf("ID: %s, Name: %s\n", name,pwd)
+		fmt.Printf("id: %d, name: %s, pwd: %s\n",id, name,pwd)
 	}
 }
 
