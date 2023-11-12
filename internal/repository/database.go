@@ -2,11 +2,18 @@ package repository
 
 import (
 	"fmt"
-	_ "github.com/lib/pq"
+
 	"github.com/jmoiron/sqlx"
+	_ "github.com/lib/pq"
 )
 
-const usersTable = "users"
+const (
+	usersTable      = "users"
+	todoListsTable  = "todo_lists"
+	usersListsTable = "users_lists"
+	todoItemsTable  = "todo_items"
+	listsItemsTable = "lists_items"
+)
 
 type Config struct {
 	Host     string

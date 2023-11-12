@@ -5,3 +5,5 @@ docker ps
 docker exec -it 45e13b7d7e31 /bin/bash
 migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5432/postgres?sslmode=disable' down
 docker exec -it 45e13b7d7e31 /bin/bash  
+
+# 4-48
