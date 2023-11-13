@@ -13,15 +13,16 @@ const (
 	usersListsTable = "users_lists"
 	todoItemsTable  = "todo_items"
 	listsItemsTable = "lists_items"
+	DBpath = "./internal/config/config.toml"
 )
 
 type Config struct {
-	Host     string
-	Port     string
-	Username string
-	Password string
-	DBName   string
-	SSLMode  string
+	Host     string `toml:"Host"`
+	Port     string `toml:"Port"`
+	Username string `toml:"Username"`
+	Password string `toml:"Password"`
+	DBName   string `toml:"DBName"`
+	SSLMode  string `toml:"SSLMode"`
 }
 
 func CreatePostgresDB(cfg Config) (*sqlx.DB, error) {

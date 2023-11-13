@@ -7,15 +7,15 @@ import (
 	// "ToDoList/internal/handler"
 )
 
-type Server struct{
-	httpServer *http.Server 
+type Server struct {
+	httpServer *http.Server
 }
 
 func (s *Server) Run(port string, handler http.Handler) error {
 	fs := http.FileServer(http.Dir("web"))
 	http.Handle("/", fs)
 	s.httpServer = &http.Server{
-		Addr:           ":"+port,
+		Addr:           ":" + port,
 		Handler:        handler,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
@@ -24,6 +24,6 @@ func (s *Server) Run(port string, handler http.Handler) error {
 	return s.httpServer.ListenAndServe()
 }
 
-func (s *Server) Closedown(ctx context.Context) error {
+func (s *Server) Shutdown(ctx context.Context) error {
 	return s.httpServer.Shutdown(ctx)
 }
