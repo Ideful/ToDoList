@@ -4,14 +4,13 @@ import (
 	model "ToDoList/internal/models"
 	"log"
 	"net/http"
-
 	"github.com/gin-gonic/gin"
 )
 
 func (h *Handler) signUp(c *gin.Context) {
 	var input model.User
 	if err := c.BindJSON(&input); err != nil {
-		log.Fatal(err)
+		log.Println(err)
 		newErrorResponse(c, http.StatusBadRequest, err.Error())
 		return
 	}
@@ -35,7 +34,7 @@ type signInInput struct {
 func (h *Handler) signIn(c *gin.Context) {
 	var input signInInput
 	if err := c.BindJSON(&input); err != nil {
-		log.Fatal(err)
+		log.Println(err)
 		newErrorResponse(c, http.StatusBadRequest, err.Error())
 		return
 	}

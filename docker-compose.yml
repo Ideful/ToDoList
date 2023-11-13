@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  todo-app:
+    build: ./
+    command: ./wait-for-postgres.sh ./todo-app 
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    environment:
+      - DBpwd=qwerty
+  db:
+    restart: always
+    image: postgres:latest
+    volumes:
+    - ./.database/postgres/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=qwerty
+    ports:
+      - 5432:5432
