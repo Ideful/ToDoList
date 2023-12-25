@@ -2,6 +2,7 @@ package repository
 
 import (
 	"fmt"
+
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 )
@@ -12,7 +13,7 @@ const (
 	usersListsTable = "users_lists"
 	todoItemsTable  = "todo_items"
 	listsItemsTable = "lists_items"
-	DBpath = "./internal/config/config.toml"
+	DBpath          = "./internal/config/config.toml"
 )
 
 type Config struct {
